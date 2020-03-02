@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24292E5DB02185BDF627EE36 /* Pods_ViNaTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A070F8ABDCEBAB79C45C833 /* Pods_ViNaTV.framework */; };
+		9416D2F4CE783FE74504F6F1 /* Pods_ViNaTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDA42E33B2E47B8FC0FFE05 /* Pods_ViNaTVTests.framework */; };
+		BC70DE7124086B8200A58519 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70DE7024086B8200A58519 /* AppDelegate.swift */; };
+		BC70DE7324086B8200A58519 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70DE7224086B8200A58519 /* SceneDelegate.swift */; };
+		BC70DE7524086B8200A58519 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70DE7424086B8200A58519 /* ViewController.swift */; };
+		BC70DE7824086B8200A58519 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC70DE7624086B8200A58519 /* Main.storyboard */; };
+		BC70DE7A24086B8700A58519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC70DE7924086B8700A58519 /* Assets.xcassets */; };
+		BC70DE7D24086B8700A58519 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC70DE7B24086B8700A58519 /* LaunchScreen.storyboard */; };
+		BC70DE8824086B8800A58519 /* ViNaTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70DE8724086B8800A58519 /* ViNaTVTests.swift */; };
+		BC70DE9324086E0C00A58519 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC70DE9224086E0C00A58519 /* GoogleService-Info.plist */; };
+		BC70DE9B2409F98000A58519 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70DE9A2409F98000A58519 /* Model.swift */; };
+		BC70DE9D2409F9BF00A58519 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70DE9C2409F9BF00A58519 /* Provider.swift */; };
+		BC70DEC6240B4CEC00A58519 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70DEC5240B4CEC00A58519 /* LoginController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC70DE8424086B8800A58519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC70DE6524086B8200A58519 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC70DE6C24086B8200A58519;
+			remoteInfo = ViNaTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		051D801D539D17570541DB9F /* Pods-ViNaTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViNaTVTests.debug.xcconfig"; path = "Target Support Files/Pods-ViNaTVTests/Pods-ViNaTVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		15BE8E0CB8ACCA5276113414 /* Pods-ViNaTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViNaTV.debug.xcconfig"; path = "Target Support Files/Pods-ViNaTV/Pods-ViNaTV.debug.xcconfig"; sourceTree = "<group>"; };
+		2DDA42E33B2E47B8FC0FFE05 /* Pods_ViNaTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViNaTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		390B4A5FAC1BEE8B08034846 /* Pods-ViNaTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViNaTVTests.release.xcconfig"; path = "Target Support Files/Pods-ViNaTVTests/Pods-ViNaTVTests.release.xcconfig"; sourceTree = "<group>"; };
+		717FBA6968852178B5D20836 /* Pods-ViNaTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViNaTV.release.xcconfig"; path = "Target Support Files/Pods-ViNaTV/Pods-ViNaTV.release.xcconfig"; sourceTree = "<group>"; };
+		8A070F8ABDCEBAB79C45C833 /* Pods_ViNaTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViNaTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC70DE6D24086B8200A58519 /* ViNaTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViNaTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC70DE7024086B8200A58519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC70DE7224086B8200A58519 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BC70DE7424086B8200A58519 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC70DE7724086B8200A58519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC70DE7924086B8700A58519 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC70DE7C24086B8700A58519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC70DE7E24086B8700A58519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC70DE8324086B8800A58519 /* ViNaTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViNaTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC70DE8724086B8800A58519 /* ViNaTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViNaTVTests.swift; sourceTree = "<group>"; };
+		BC70DE8924086B8800A58519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC70DE9224086E0C00A58519 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BC70DE9A2409F98000A58519 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		BC70DE9C2409F9BF00A58519 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		BC70DEC5240B4CEC00A58519 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC70DE6A24086B8200A58519 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24292E5DB02185BDF627EE36 /* Pods_ViNaTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC70DE8024086B8800A58519 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9416D2F4CE783FE74504F6F1 /* Pods_ViNaTVTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CD948CB85AE5226A36B11FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15BE8E0CB8ACCA5276113414 /* Pods-ViNaTV.debug.xcconfig */,
+				717FBA6968852178B5D20836 /* Pods-ViNaTV.release.xcconfig */,
+				051D801D539D17570541DB9F /* Pods-ViNaTVTests.debug.xcconfig */,
+				390B4A5FAC1BEE8B08034846 /* Pods-ViNaTVTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5B5FF58B1ACC58A871AAF76E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A070F8ABDCEBAB79C45C833 /* Pods_ViNaTV.framework */,
+				2DDA42E33B2E47B8FC0FFE05 /* Pods_ViNaTVTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC70DE6424086B8200A58519 = {
+			isa = PBXGroup;
+			children = (
+				BC70DE6F24086B8200A58519 /* ViNaTV */,
+				BC70DE8624086B8800A58519 /* ViNaTVTests */,
+				BC70DE6E24086B8200A58519 /* Products */,
+				4CD948CB85AE5226A36B11FD /* Pods */,
+				5B5FF58B1ACC58A871AAF76E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC70DE6E24086B8200A58519 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC70DE6D24086B8200A58519 /* ViNaTV.app */,
+				BC70DE8324086B8800A58519 /* ViNaTVTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC70DE6F24086B8200A58519 /* ViNaTV */ = {
+			isa = PBXGroup;
+			children = (
+				BC70DE7024086B8200A58519 /* AppDelegate.swift */,
+				BC70DE9424086E6A00A58519 /* Model */,
+				BC70DE9524086E7400A58519 /* View */,
+				BC70DE9624086E7C00A58519 /* ViewModel */,
+				BC70DE9724086E8700A58519 /* Controller */,
+				BC70DE9824086EAC00A58519 /* Networking */,
+				BC70DE9924086ECF00A58519 /* Utils */,
+				BC70DE7E24086B8700A58519 /* Info.plist */,
+				BC70DE9224086E0C00A58519 /* GoogleService-Info.plist */,
+			);
+			path = ViNaTV;
+			sourceTree = "<group>";
+		};
+		BC70DE8624086B8800A58519 /* ViNaTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC70DE8724086B8800A58519 /* ViNaTVTests.swift */,
+				BC70DE8924086B8800A58519 /* Info.plist */,
+			);
+			path = ViNaTVTests;
+			sourceTree = "<group>";
+		};
+		BC70DE9424086E6A00A58519 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC70DE9A2409F98000A58519 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC70DE9524086E7400A58519 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC70DE7624086B8200A58519 /* Main.storyboard */,
+				BC70DE7424086B8200A58519 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC70DE9624086E7C00A58519 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BC70DE9724086E8700A58519 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC70DEC5240B4CEC00A58519 /* LoginController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC70DE9824086EAC00A58519 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BC70DE9C2409F9BF00A58519 /* Provider.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BC70DE9924086ECF00A58519 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BC70DE7B24086B8700A58519 /* LaunchScreen.storyboard */,
+				BC70DE7224086B8200A58519 /* SceneDelegate.swift */,
+				BC70DE7924086B8700A58519 /* Assets.xcassets */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC70DE6C24086B8200A58519 /* ViNaTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC70DE8C24086B8800A58519 /* Build configuration list for PBXNativeTarget "ViNaTV" */;
+			buildPhases = (
+				8F93550ACE1047F90FDDC7C4 /* [CP] Check Pods Manifest.lock */,
+				BC70DE6924086B8200A58519 /* Sources */,
+				BC70DE6A24086B8200A58519 /* Frameworks */,
+				BC70DE6B24086B8200A58519 /* Resources */,
+				748EA39194D515F637C34378 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViNaTV;
+			productName = ViNaTV;
+			productReference = BC70DE6D24086B8200A58519 /* ViNaTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC70DE8224086B8800A58519 /* ViNaTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC70DE8F24086B8800A58519 /* Build configuration list for PBXNativeTarget "ViNaTVTests" */;
+			buildPhases = (
+				0FED8BFB2F3D3D582AB24643 /* [CP] Check Pods Manifest.lock */,
+				BC70DE7F24086B8800A58519 /* Sources */,
+				BC70DE8024086B8800A58519 /* Frameworks */,
+				BC70DE8124086B8800A58519 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC70DE8524086B8800A58519 /* PBXTargetDependency */,
+			);
+			name = ViNaTVTests;
+			productName = ViNaTVTests;
+			productReference = BC70DE8324086B8800A58519 /* ViNaTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC70DE6524086B8200A58519 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Alan Silva";
+				TargetAttributes = {
+					BC70DE6C24086B8200A58519 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					BC70DE8224086B8800A58519 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = BC70DE6C24086B8200A58519;
+					};
+				};
+			};
+			buildConfigurationList = BC70DE6824086B8200A58519 /* Build configuration list for PBXProject "ViNaTV" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC70DE6424086B8200A58519;
+			productRefGroup = BC70DE6E24086B8200A58519 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC70DE6C24086B8200A58519 /* ViNaTV */,
+				BC70DE8224086B8800A58519 /* ViNaTVTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC70DE6B24086B8200A58519 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC70DE7D24086B8700A58519 /* LaunchScreen.storyboard in Resources */,
+				BC70DE9324086E0C00A58519 /* GoogleService-Info.plist in Resources */,
+				BC70DE7A24086B8700A58519 /* Assets.xcassets in Resources */,
+				BC70DE7824086B8200A58519 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC70DE8124086B8800A58519 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FED8BFB2F3D3D582AB24643 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViNaTVTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		748EA39194D515F637C34378 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViNaTV/Pods-ViNaTV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViNaTV/Pods-ViNaTV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViNaTV/Pods-ViNaTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F93550ACE1047F90FDDC7C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViNaTV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC70DE6924086B8200A58519 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC70DE7524086B8200A58519 /* ViewController.swift in Sources */,
+				BC70DEC6240B4CEC00A58519 /* LoginController.swift in Sources */,
+				BC70DE7124086B8200A58519 /* AppDelegate.swift in Sources */,
+				BC70DE7324086B8200A58519 /* SceneDelegate.swift in Sources */,
+				BC70DE9D2409F9BF00A58519 /* Provider.swift in Sources */,
+				BC70DE9B2409F98000A58519 /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC70DE7F24086B8800A58519 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC70DE8824086B8800A58519 /* ViNaTVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC70DE8524086B8800A58519 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC70DE6C24086B8200A58519 /* ViNaTV */;
+			targetProxy = BC70DE8424086B8800A58519 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC70DE7624086B8200A58519 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC70DE7724086B8200A58519 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC70DE7B24086B8700A58519 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC70DE7C24086B8700A58519 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC70DE8A24086B8800A58519 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC70DE8B24086B8800A58519 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC70DE8D24086B8800A58519 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15BE8E0CB8ACCA5276113414 /* Pods-ViNaTV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VF7VYA94WY;
+				INFOPLIST_FILE = ViNaTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abstec.ViNaTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC70DE8E24086B8800A58519 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 717FBA6968852178B5D20836 /* Pods-ViNaTV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VF7VYA94WY;
+				INFOPLIST_FILE = ViNaTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abstec.ViNaTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC70DE9024086B8800A58519 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 051D801D539D17570541DB9F /* Pods-ViNaTVTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VF7VYA94WY;
+				INFOPLIST_FILE = ViNaTVTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abstec.ViNaTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViNaTV.app/ViNaTV";
+			};
+			name = Debug;
+		};
+		BC70DE9124086B8800A58519 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 390B4A5FAC1BEE8B08034846 /* Pods-ViNaTVTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VF7VYA94WY;
+				INFOPLIST_FILE = ViNaTVTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abstec.ViNaTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViNaTV.app/ViNaTV";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC70DE6824086B8200A58519 /* Build configuration list for PBXProject "ViNaTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC70DE8A24086B8800A58519 /* Debug */,
+				BC70DE8B24086B8800A58519 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC70DE8C24086B8800A58519 /* Build configuration list for PBXNativeTarget "ViNaTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC70DE8D24086B8800A58519 /* Debug */,
+				BC70DE8E24086B8800A58519 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC70DE8F24086B8800A58519 /* Build configuration list for PBXNativeTarget "ViNaTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC70DE9024086B8800A58519 /* Debug */,
+				BC70DE9124086B8800A58519 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC70DE6524086B8200A58519 /* Project object */;
+}
