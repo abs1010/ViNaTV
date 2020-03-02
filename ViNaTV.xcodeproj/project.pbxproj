@@ -1,0 +1,1195 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24292E5DB02185BDF627EE36 /* Pods_ViNaTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A070F8ABDCEBAB79C45C833 /* Pods_ViNaTV.framework */; };
+		9416D2F4CE783FE74504F6F1 /* Pods_ViNaTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDA42E33B2E47B8FC0FFE05 /* Pods_ViNaTVTests.framework */; };
+		BC2F812F2451C6650052E246 /* LotteryMapStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2F812E2451C6650052E246 /* LotteryMapStoryboard.storyboard */; };
+		BC2F81312451CBF90052E246 /* LotteryMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F81302451CBF90052E246 /* LotteryMapViewController.swift */; };
+		BC2F8137245258500052E246 /* UserSettingsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2F8136245258500052E246 /* UserSettingsStoryboard.storyboard */; };
+		BC2F8139245258B80052E246 /* UserSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2F8138245258B80052E246 /* UserSettingsViewController.swift */; };
+		BC2F813C245263520052E246 /* 10183-location-pin.json in Resources */ = {isa = PBXBuildFile; fileRef = BC2F813A245263520052E246 /* 10183-location-pin.json */; };
+		BC2F813D245263520052E246 /* 18943-growth.json in Resources */ = {isa = PBXBuildFile; fileRef = BC2F813B245263520052E246 /* 18943-growth.json */; };
+		BC57A3D7244E603F00CA2F0C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC57A3D6244E603F00CA2F0C /* Extensions.swift */; };
+		BC57A3DD244F9F1100CA2F0C /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC57A3DC244F9F1100CA2F0C /* Login.storyboard */; };
+		BC57A3E0244FA2E900CA2F0C /* 19404-video-playback.json in Resources */ = {isa = PBXBuildFile; fileRef = BC57A3DF244FA2E900CA2F0C /* 19404-video-playback.json */; };
+		BC57A3E6244FA4AB00CA2F0C /* LotteryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC57A3E5244FA4AB00CA2F0C /* LotteryStoryboard.storyboard */; };
+		BC57A3E8244FB04A00CA2F0C /* LotteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC57A3E7244FB04A00CA2F0C /* LotteryViewController.swift */; };
+		BC57A3EA244FB39500CA2F0C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC57A3E9244FB39500CA2F0C /* MainTabBarController.swift */; };
+		BC57A3EB244FD06700CA2F0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC70DE7624086B8200A58519 /* Main.storyboard */; };
+		BC57A3F1244FD42000CA2F0C /* CouponStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC57A3F0244FD42000CA2F0C /* CouponStoryboard.storyboard */; };
+		BC70DE7124086B8200A58519 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70DE7024086B8200A58519 /* AppDelegate.swift */; };
+		BC70DE7324086B8200A58519 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70DE7224086B8200A58519 /* SceneDelegate.swift */; };
+		BC70DE7524086B8200A58519 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70DE7424086B8200A58519 /* LoginViewController.swift */; };
+		BC70DE7A24086B8700A58519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC70DE7924086B8700A58519 /* Assets.xcassets */; };
+		BC70DE7D24086B8700A58519 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC70DE7B24086B8700A58519 /* LaunchScreen.storyboard */; };
+		BC70DE8824086B8800A58519 /* ViNaTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70DE8724086B8800A58519 /* ViNaTVTests.swift */; };
+		BC70DE9324086E0C00A58519 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC70DE9224086E0C00A58519 /* GoogleService-Info.plist */; };
+		BC70DE9B2409F98000A58519 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70DE9A2409F98000A58519 /* Model.swift */; };
+		BC70DE9D2409F9BF00A58519 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70DE9C2409F9BF00A58519 /* APIManager.swift */; };
+		BC70DEC6240B4CEC00A58519 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70DEC5240B4CEC00A58519 /* LoginController.swift */; };
+		BC99662724638E160071A063 /* 18943-growth.json in Resources */ = {isa = PBXBuildFile; fileRef = BC99662424638E160071A063 /* 18943-growth.json */; };
+		BC99662824638E160071A063 /* 10183-location-pin.json in Resources */ = {isa = PBXBuildFile; fileRef = BC99662524638E160071A063 /* 10183-location-pin.json */; };
+		BC99662924638E160071A063 /* 19404-video-playback.json in Resources */ = {isa = PBXBuildFile; fileRef = BC99662624638E160071A063 /* 19404-video-playback.json */; };
+		BC99662B2464A0B60071A063 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC99662A2464A0B60071A063 /* Extensions.swift */; };
+		BC99662D2464D1E60071A063 /* LotoResultsV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC99662C2464D1E60071A063 /* LotoResultsV1.swift */; };
+		BC9DBCB024565C0800563D5B /* LotoBrandsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DBCAE24565C0800563D5B /* LotoBrandsTableViewCell.swift */; };
+		BC9DBCB124565C0800563D5B /* LotoBrandsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC9DBCAF24565C0800563D5B /* LotoBrandsTableViewCell.xib */; };
+		BCF08DC8245E4C1100C5BD27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF08DC7245E4C1100C5BD27 /* AppDelegate.swift */; };
+		BCF08DCA245E4C1100C5BD27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF08DC9245E4C1100C5BD27 /* SceneDelegate.swift */; };
+		BCF08DCC245E4C1100C5BD27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF08DCB245E4C1100C5BD27 /* ViewController.swift */; };
+		BCF08DCF245E4C1100C5BD27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF08DCD245E4C1100C5BD27 /* Main.storyboard */; };
+		BCF08DD1245E4C1300C5BD27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF08DD0245E4C1300C5BD27 /* Assets.xcassets */; };
+		BCF08DD4245E4C1300C5BD27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF08DD2245E4C1300C5BD27 /* LaunchScreen.storyboard */; };
+		BCF08DDF245E4DFE00C5BD27 /* 4510-uploading.json in Resources */ = {isa = PBXBuildFile; fileRef = BCF08DDE245E4DFD00C5BD27 /* 4510-uploading.json */; };
+		BCF08DE1245E50E900C5BD27 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF08DE0245E50E900C5BD27 /* APIManager.swift */; };
+		BCF08DE4245E566A00C5BD27 /* LotoResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF08DE3245E566A00C5BD27 /* LotoResults.swift */; };
+		BCF08DE8245E671100C5BD27 /* ResultsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF08DE6245E671100C5BD27 /* ResultsCollectionViewCell.swift */; };
+		BCF08DE9245E671100C5BD27 /* ResultsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF08DE7245E671100C5BD27 /* ResultsCollectionViewCell.xib */; };
+		BCF08DEB245E68A000C5BD27 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF08DEA245E68A000C5BD27 /* ResultsViewController.swift */; };
+		BCF08DFB2460DC1D00C5BD27 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF08DF92460DC1D00C5BD27 /* MainTableViewCell.swift */; };
+		BCF08DFC2460DC1D00C5BD27 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF08DFA2460DC1D00C5BD27 /* MainTableViewCell.xib */; };
+		BCF08DFE2461096700C5BD27 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF08DFD2461096700C5BD27 /* BaseViewController.swift */; };
+		E00589AFAE5CBEB949DF14D0 /* Pods_ViNaTV_Manager_VNTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADA77FEF38EEC1F0AED827B /* Pods_ViNaTV_Manager_VNTV.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC70DE8424086B8800A58519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC70DE6524086B8200A58519 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC70DE6C24086B8200A58519;
+			remoteInfo = ViNaTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		051D801D539D17570541DB9F /* Pods-ViNaTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViNaTVTests.debug.xcconfig"; path = "Target Support Files/Pods-ViNaTVTests/Pods-ViNaTVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		15BE8E0CB8ACCA5276113414 /* Pods-ViNaTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViNaTV.debug.xcconfig"; path = "Target Support Files/Pods-ViNaTV/Pods-ViNaTV.debug.xcconfig"; sourceTree = "<group>"; };
+		2DDA42E33B2E47B8FC0FFE05 /* Pods_ViNaTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViNaTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		390B4A5FAC1BEE8B08034846 /* Pods-ViNaTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViNaTVTests.release.xcconfig"; path = "Target Support Files/Pods-ViNaTVTests/Pods-ViNaTVTests.release.xcconfig"; sourceTree = "<group>"; };
+		549BEE27AAAD3C643518861D /* Pods-ViNaTV-Manager-VNTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViNaTV-Manager-VNTV.release.xcconfig"; path = "Target Support Files/Pods-ViNaTV-Manager-VNTV/Pods-ViNaTV-Manager-VNTV.release.xcconfig"; sourceTree = "<group>"; };
+		717FBA6968852178B5D20836 /* Pods-ViNaTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViNaTV.release.xcconfig"; path = "Target Support Files/Pods-ViNaTV/Pods-ViNaTV.release.xcconfig"; sourceTree = "<group>"; };
+		8A070F8ABDCEBAB79C45C833 /* Pods_ViNaTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViNaTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		984E156560731F0100E4DB8F /* Pods-ViNaTV-Manager-VNTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViNaTV-Manager-VNTV.debug.xcconfig"; path = "Target Support Files/Pods-ViNaTV-Manager-VNTV/Pods-ViNaTV-Manager-VNTV.debug.xcconfig"; sourceTree = "<group>"; };
+		BC2F812E2451C6650052E246 /* LotteryMapStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LotteryMapStoryboard.storyboard; sourceTree = "<group>"; };
+		BC2F81302451CBF90052E246 /* LotteryMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryMapViewController.swift; sourceTree = "<group>"; };
+		BC2F8136245258500052E246 /* UserSettingsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserSettingsStoryboard.storyboard; sourceTree = "<group>"; };
+		BC2F8138245258B80052E246 /* UserSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsViewController.swift; sourceTree = "<group>"; };
+		BC2F813A245263520052E246 /* 10183-location-pin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "10183-location-pin.json"; sourceTree = "<group>"; };
+		BC2F813B245263520052E246 /* 18943-growth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "18943-growth.json"; sourceTree = "<group>"; };
+		BC57A3D6244E603F00CA2F0C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BC57A3DC244F9F1100CA2F0C /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		BC57A3DF244FA2E900CA2F0C /* 19404-video-playback.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "19404-video-playback.json"; sourceTree = "<group>"; };
+		BC57A3E5244FA4AB00CA2F0C /* LotteryStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LotteryStoryboard.storyboard; sourceTree = "<group>"; };
+		BC57A3E7244FB04A00CA2F0C /* LotteryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryViewController.swift; sourceTree = "<group>"; };
+		BC57A3E9244FB39500CA2F0C /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		BC57A3F0244FD42000CA2F0C /* CouponStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CouponStoryboard.storyboard; sourceTree = "<group>"; };
+		BC70DE6D24086B8200A58519 /* ViNaTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViNaTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC70DE7024086B8200A58519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC70DE7224086B8200A58519 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BC70DE7424086B8200A58519 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BC70DE7724086B8200A58519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC70DE7924086B8700A58519 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC70DE7C24086B8700A58519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC70DE7E24086B8700A58519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC70DE8324086B8800A58519 /* ViNaTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViNaTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC70DE8724086B8800A58519 /* ViNaTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViNaTVTests.swift; sourceTree = "<group>"; };
+		BC70DE8924086B8800A58519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC70DE9224086E0C00A58519 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BC70DE9A2409F98000A58519 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		BC70DE9C2409F9BF00A58519 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		BC70DEC5240B4CEC00A58519 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		BC99662424638E160071A063 /* 18943-growth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "18943-growth.json"; sourceTree = "<group>"; };
+		BC99662524638E160071A063 /* 10183-location-pin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "10183-location-pin.json"; sourceTree = "<group>"; };
+		BC99662624638E160071A063 /* 19404-video-playback.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "19404-video-playback.json"; sourceTree = "<group>"; };
+		BC99662A2464A0B60071A063 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BC99662C2464D1E60071A063 /* LotoResultsV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotoResultsV1.swift; sourceTree = "<group>"; };
+		BC9DBCAE24565C0800563D5B /* LotoBrandsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotoBrandsTableViewCell.swift; sourceTree = "<group>"; };
+		BC9DBCAF24565C0800563D5B /* LotoBrandsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LotoBrandsTableViewCell.xib; sourceTree = "<group>"; };
+		BCF08DC5245E4C1100C5BD27 /* Manager-VNTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Manager-VNTV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF08DC7245E4C1100C5BD27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCF08DC9245E4C1100C5BD27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BCF08DCB245E4C1100C5BD27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCF08DCE245E4C1100C5BD27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCF08DD0245E4C1300C5BD27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCF08DD3245E4C1300C5BD27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCF08DD5245E4C1300C5BD27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCF08DDE245E4DFD00C5BD27 /* 4510-uploading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4510-uploading.json"; sourceTree = "<group>"; };
+		BCF08DE0245E50E900C5BD27 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		BCF08DE3245E566A00C5BD27 /* LotoResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotoResults.swift; sourceTree = "<group>"; };
+		BCF08DE6245E671100C5BD27 /* ResultsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsCollectionViewCell.swift; sourceTree = "<group>"; };
+		BCF08DE7245E671100C5BD27 /* ResultsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsCollectionViewCell.xib; sourceTree = "<group>"; };
+		BCF08DEA245E68A000C5BD27 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		BCF08DF92460DC1D00C5BD27 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		BCF08DFA2460DC1D00C5BD27 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		BCF08DFD2461096700C5BD27 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CADA77FEF38EEC1F0AED827B /* Pods_ViNaTV_Manager_VNTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViNaTV_Manager_VNTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC70DE6A24086B8200A58519 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24292E5DB02185BDF627EE36 /* Pods_ViNaTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC70DE8024086B8800A58519 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9416D2F4CE783FE74504F6F1 /* Pods_ViNaTVTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF08DC2245E4C1100C5BD27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00589AFAE5CBEB949DF14D0 /* Pods_ViNaTV_Manager_VNTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CD948CB85AE5226A36B11FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15BE8E0CB8ACCA5276113414 /* Pods-ViNaTV.debug.xcconfig */,
+				717FBA6968852178B5D20836 /* Pods-ViNaTV.release.xcconfig */,
+				051D801D539D17570541DB9F /* Pods-ViNaTVTests.debug.xcconfig */,
+				390B4A5FAC1BEE8B08034846 /* Pods-ViNaTVTests.release.xcconfig */,
+				984E156560731F0100E4DB8F /* Pods-ViNaTV-Manager-VNTV.debug.xcconfig */,
+				549BEE27AAAD3C643518861D /* Pods-ViNaTV-Manager-VNTV.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5B5FF58B1ACC58A871AAF76E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A070F8ABDCEBAB79C45C833 /* Pods_ViNaTV.framework */,
+				2DDA42E33B2E47B8FC0FFE05 /* Pods_ViNaTVTests.framework */,
+				CADA77FEF38EEC1F0AED827B /* Pods_ViNaTV_Manager_VNTV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC2F812A2451C6150052E246 /* LoterryAddresses */ = {
+			isa = PBXGroup;
+			children = (
+				BC2F812D2451C6400052E246 /* Model */,
+				BC2F812C2451C63A0052E246 /* ViewModel */,
+				BC2F812B2451C62E0052E246 /* View */,
+			);
+			path = LoterryAddresses;
+			sourceTree = "<group>";
+		};
+		BC2F812B2451C62E0052E246 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC2F812E2451C6650052E246 /* LotteryMapStoryboard.storyboard */,
+				BC2F81302451CBF90052E246 /* LotteryMapViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC2F812C2451C63A0052E246 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BC2F812D2451C6400052E246 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC2F8132245257C10052E246 /* UserSettings */ = {
+			isa = PBXGroup;
+			children = (
+				BC2F8135245257EB0052E246 /* Model */,
+				BC2F8134245257E20052E246 /* ViewModel */,
+				BC2F8133245257DD0052E246 /* View */,
+			);
+			path = UserSettings;
+			sourceTree = "<group>";
+		};
+		BC2F8133245257DD0052E246 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC2F8136245258500052E246 /* UserSettingsStoryboard.storyboard */,
+				BC2F8138245258B80052E246 /* UserSettingsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC2F8134245257E20052E246 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BC2F8135245257EB0052E246 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC57A3D8244F9E7300CA2F0C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BC57A3DA244F9ED200CA2F0C /* MainMenu */,
+				BC57A3D9244F9E8B00CA2F0C /* Login */,
+				BC57A3E1244FA2F300CA2F0C /* LotteryResults */,
+				BC2F812A2451C6150052E246 /* LoterryAddresses */,
+				BC57A3EC244FD36900CA2F0C /* Coupon */,
+				BC2F8132245257C10052E246 /* UserSettings */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BC57A3D9244F9E8B00CA2F0C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BC70DE9424086E6A00A58519 /* Model */,
+				BC70DE9524086E7400A58519 /* View */,
+				BC70DE9624086E7C00A58519 /* ViewModel */,
+				BC70DE9724086E8700A58519 /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BC57A3DA244F9ED200CA2F0C /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				BC57A3DB244F9EE400CA2F0C /* View */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		BC57A3DB244F9EE400CA2F0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC70DE7624086B8200A58519 /* Main.storyboard */,
+				BC57A3E9244FB39500CA2F0C /* MainTabBarController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC57A3DE244FA2C800CA2F0C /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				BC57A3DF244FA2E900CA2F0C /* 19404-video-playback.json */,
+				BC2F813A245263520052E246 /* 10183-location-pin.json */,
+				BC2F813B245263520052E246 /* 18943-growth.json */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		BC57A3E1244FA2F300CA2F0C /* LotteryResults */ = {
+			isa = PBXGroup;
+			children = (
+				BC57A3F2244FD42D00CA2F0C /* Controller */,
+				BC57A3E2244FA43300CA2F0C /* Model */,
+				BC57A3E3244FA43A00CA2F0C /* ViewModel */,
+				BC57A3E4244FA44500CA2F0C /* View */,
+			);
+			path = LotteryResults;
+			sourceTree = "<group>";
+		};
+		BC57A3E2244FA43300CA2F0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC57A3E3244FA43A00CA2F0C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BC57A3E4244FA44500CA2F0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC9DBCAD24565B3800563D5B /* Cell */,
+				BC57A3E5244FA4AB00CA2F0C /* LotteryStoryboard.storyboard */,
+				BC57A3E7244FB04A00CA2F0C /* LotteryViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC57A3EC244FD36900CA2F0C /* Coupon */ = {
+			isa = PBXGroup;
+			children = (
+				BC57A3EF244FD3E300CA2F0C /* ViewModel */,
+				BC57A3EE244FD3DE00CA2F0C /* Model */,
+				BC57A3ED244FD3D600CA2F0C /* View */,
+			);
+			path = Coupon;
+			sourceTree = "<group>";
+		};
+		BC57A3ED244FD3D600CA2F0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC57A3F0244FD42000CA2F0C /* CouponStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC57A3EE244FD3DE00CA2F0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC57A3EF244FD3E300CA2F0C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BC57A3F2244FD42D00CA2F0C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC70DE6424086B8200A58519 = {
+			isa = PBXGroup;
+			children = (
+				BC70DE6F24086B8200A58519 /* ViNaTV */,
+				BC70DE8624086B8800A58519 /* ViNaTVTests */,
+				BCF08DC6245E4C1100C5BD27 /* Manager-VNTV */,
+				BC70DE6E24086B8200A58519 /* Products */,
+				4CD948CB85AE5226A36B11FD /* Pods */,
+				5B5FF58B1ACC58A871AAF76E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC70DE6E24086B8200A58519 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC70DE6D24086B8200A58519 /* ViNaTV.app */,
+				BC70DE8324086B8800A58519 /* ViNaTVTests.xctest */,
+				BCF08DC5245E4C1100C5BD27 /* Manager-VNTV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC70DE6F24086B8200A58519 /* ViNaTV */ = {
+			isa = PBXGroup;
+			children = (
+				BC70DE7024086B8200A58519 /* AppDelegate.swift */,
+				BC57A3D8244F9E7300CA2F0C /* Modules */,
+				BC70DE9824086EAC00A58519 /* Networking */,
+				BC70DE9924086ECF00A58519 /* Utils */,
+				BC57A3DE244FA2C800CA2F0C /* Animation */,
+				BC70DE7E24086B8700A58519 /* Info.plist */,
+				BC70DE9224086E0C00A58519 /* GoogleService-Info.plist */,
+			);
+			path = ViNaTV;
+			sourceTree = "<group>";
+		};
+		BC70DE8624086B8800A58519 /* ViNaTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC70DE8724086B8800A58519 /* ViNaTVTests.swift */,
+				BC70DE8924086B8800A58519 /* Info.plist */,
+			);
+			path = ViNaTVTests;
+			sourceTree = "<group>";
+		};
+		BC70DE9424086E6A00A58519 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC70DE9A2409F98000A58519 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC70DE9524086E7400A58519 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC57A3DC244F9F1100CA2F0C /* Login.storyboard */,
+				BC70DE7424086B8200A58519 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC70DE9624086E7C00A58519 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BC70DE9724086E8700A58519 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC70DEC5240B4CEC00A58519 /* LoginController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC70DE9824086EAC00A58519 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BC70DE9C2409F9BF00A58519 /* APIManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BC70DE9924086ECF00A58519 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BC70DE7B24086B8700A58519 /* LaunchScreen.storyboard */,
+				BC70DE7224086B8200A58519 /* SceneDelegate.swift */,
+				BC70DE7924086B8700A58519 /* Assets.xcassets */,
+				BC57A3D6244E603F00CA2F0C /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BC9DBCAD24565B3800563D5B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BC9DBCAE24565C0800563D5B /* LotoBrandsTableViewCell.swift */,
+				BC9DBCAF24565C0800563D5B /* LotoBrandsTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BCF08DC6245E4C1100C5BD27 /* Manager-VNTV */ = {
+			isa = PBXGroup;
+			children = (
+				BCF08DE2245E565500C5BD27 /* Model */,
+				BCF08DDB245E4C7C00C5BD27 /* Controller */,
+				BCF08DDA245E4C7500C5BD27 /* View */,
+				BCF08DD9245E4C6900C5BD27 /* APIManager */,
+				BCF08DDC245E4C9400C5BD27 /* Utils */,
+				BCF08DD5245E4C1300C5BD27 /* Info.plist */,
+			);
+			path = "Manager-VNTV";
+			sourceTree = "<group>";
+		};
+		BCF08DD9245E4C6900C5BD27 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				BCF08DE0245E50E900C5BD27 /* APIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		BCF08DDA245E4C7500C5BD27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCF08DCB245E4C1100C5BD27 /* ViewController.swift */,
+				BCF08DEA245E68A000C5BD27 /* ResultsViewController.swift */,
+				BCF08DCD245E4C1100C5BD27 /* Main.storyboard */,
+				BCF08DE5245E66D700C5BD27 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCF08DDB245E4C7C00C5BD27 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BCF08DDC245E4C9400C5BD27 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BCF08DDD245E4DE400C5BD27 /* Animation */,
+				BCF08DC7245E4C1100C5BD27 /* AppDelegate.swift */,
+				BCF08DC9245E4C1100C5BD27 /* SceneDelegate.swift */,
+				BCF08DD0245E4C1300C5BD27 /* Assets.xcassets */,
+				BCF08DD2245E4C1300C5BD27 /* LaunchScreen.storyboard */,
+				BCF08DFD2461096700C5BD27 /* BaseViewController.swift */,
+				BC99662A2464A0B60071A063 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BCF08DDD245E4DE400C5BD27 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				BC99662524638E160071A063 /* 10183-location-pin.json */,
+				BC99662424638E160071A063 /* 18943-growth.json */,
+				BC99662624638E160071A063 /* 19404-video-playback.json */,
+				BCF08DDE245E4DFD00C5BD27 /* 4510-uploading.json */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		BCF08DE2245E565500C5BD27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCF08DE3245E566A00C5BD27 /* LotoResults.swift */,
+				BC99662C2464D1E60071A063 /* LotoResultsV1.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BCF08DE5245E66D700C5BD27 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BCF08DF92460DC1D00C5BD27 /* MainTableViewCell.swift */,
+				BCF08DFA2460DC1D00C5BD27 /* MainTableViewCell.xib */,
+				BCF08DE6245E671100C5BD27 /* ResultsCollectionViewCell.swift */,
+				BCF08DE7245E671100C5BD27 /* ResultsCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC70DE6C24086B8200A58519 /* ViNaTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC70DE8C24086B8800A58519 /* Build configuration list for PBXNativeTarget "ViNaTV" */;
+			buildPhases = (
+				8F93550ACE1047F90FDDC7C4 /* [CP] Check Pods Manifest.lock */,
+				BC70DE6924086B8200A58519 /* Sources */,
+				BC70DE6A24086B8200A58519 /* Frameworks */,
+				BC70DE6B24086B8200A58519 /* Resources */,
+				748EA39194D515F637C34378 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViNaTV;
+			productName = ViNaTV;
+			productReference = BC70DE6D24086B8200A58519 /* ViNaTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC70DE8224086B8800A58519 /* ViNaTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC70DE8F24086B8800A58519 /* Build configuration list for PBXNativeTarget "ViNaTVTests" */;
+			buildPhases = (
+				0FED8BFB2F3D3D582AB24643 /* [CP] Check Pods Manifest.lock */,
+				BC70DE7F24086B8800A58519 /* Sources */,
+				BC70DE8024086B8800A58519 /* Frameworks */,
+				BC70DE8124086B8800A58519 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC70DE8524086B8800A58519 /* PBXTargetDependency */,
+			);
+			name = ViNaTVTests;
+			productName = ViNaTVTests;
+			productReference = BC70DE8324086B8800A58519 /* ViNaTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCF08DC4245E4C1100C5BD27 /* Manager-VNTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCF08DD8245E4C1300C5BD27 /* Build configuration list for PBXNativeTarget "Manager-VNTV" */;
+			buildPhases = (
+				8E2BEDFEC4E2A693D42EBE68 /* [CP] Check Pods Manifest.lock */,
+				BCF08DC1245E4C1100C5BD27 /* Sources */,
+				BCF08DC2245E4C1100C5BD27 /* Frameworks */,
+				BCF08DC3245E4C1100C5BD27 /* Resources */,
+				612EDBCBA0B40B849F7DC0BE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Manager-VNTV";
+			productName = "Manager-VNTV";
+			productReference = BCF08DC5245E4C1100C5BD27 /* Manager-VNTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC70DE6524086B8200A58519 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Alan Silva";
+				TargetAttributes = {
+					BC70DE6C24086B8200A58519 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					BC70DE8224086B8800A58519 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = BC70DE6C24086B8200A58519;
+					};
+					BCF08DC4245E4C1100C5BD27 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = BC70DE6824086B8200A58519 /* Build configuration list for PBXProject "ViNaTV" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC70DE6424086B8200A58519;
+			productRefGroup = BC70DE6E24086B8200A58519 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC70DE6C24086B8200A58519 /* ViNaTV */,
+				BC70DE8224086B8800A58519 /* ViNaTVTests */,
+				BCF08DC4245E4C1100C5BD27 /* Manager-VNTV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC70DE6B24086B8200A58519 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC9DBCB124565C0800563D5B /* LotoBrandsTableViewCell.xib in Resources */,
+				BC2F813C245263520052E246 /* 10183-location-pin.json in Resources */,
+				BC57A3EB244FD06700CA2F0C /* Main.storyboard in Resources */,
+				BC2F813D245263520052E246 /* 18943-growth.json in Resources */,
+				BC2F8137245258500052E246 /* UserSettingsStoryboard.storyboard in Resources */,
+				BC70DE7D24086B8700A58519 /* LaunchScreen.storyboard in Resources */,
+				BC70DE9324086E0C00A58519 /* GoogleService-Info.plist in Resources */,
+				BC57A3DD244F9F1100CA2F0C /* Login.storyboard in Resources */,
+				BC57A3E0244FA2E900CA2F0C /* 19404-video-playback.json in Resources */,
+				BC70DE7A24086B8700A58519 /* Assets.xcassets in Resources */,
+				BC2F812F2451C6650052E246 /* LotteryMapStoryboard.storyboard in Resources */,
+				BC57A3E6244FA4AB00CA2F0C /* LotteryStoryboard.storyboard in Resources */,
+				BC57A3F1244FD42000CA2F0C /* CouponStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC70DE8124086B8800A58519 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF08DC3245E4C1100C5BD27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC99662924638E160071A063 /* 19404-video-playback.json in Resources */,
+				BC99662724638E160071A063 /* 18943-growth.json in Resources */,
+				BCF08DFC2460DC1D00C5BD27 /* MainTableViewCell.xib in Resources */,
+				BCF08DE9245E671100C5BD27 /* ResultsCollectionViewCell.xib in Resources */,
+				BCF08DD4245E4C1300C5BD27 /* LaunchScreen.storyboard in Resources */,
+				BCF08DDF245E4DFE00C5BD27 /* 4510-uploading.json in Resources */,
+				BCF08DD1245E4C1300C5BD27 /* Assets.xcassets in Resources */,
+				BC99662824638E160071A063 /* 10183-location-pin.json in Resources */,
+				BCF08DCF245E4C1100C5BD27 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FED8BFB2F3D3D582AB24643 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViNaTVTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		612EDBCBA0B40B849F7DC0BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViNaTV-Manager-VNTV/Pods-ViNaTV-Manager-VNTV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViNaTV-Manager-VNTV/Pods-ViNaTV-Manager-VNTV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViNaTV-Manager-VNTV/Pods-ViNaTV-Manager-VNTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		748EA39194D515F637C34378 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViNaTV/Pods-ViNaTV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViNaTV/Pods-ViNaTV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViNaTV/Pods-ViNaTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E2BEDFEC4E2A693D42EBE68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViNaTV-Manager-VNTV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F93550ACE1047F90FDDC7C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViNaTV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC70DE6924086B8200A58519 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC57A3E8244FB04A00CA2F0C /* LotteryViewController.swift in Sources */,
+				BC70DE7524086B8200A58519 /* LoginViewController.swift in Sources */,
+				BC57A3EA244FB39500CA2F0C /* MainTabBarController.swift in Sources */,
+				BC9DBCB024565C0800563D5B /* LotoBrandsTableViewCell.swift in Sources */,
+				BC2F81312451CBF90052E246 /* LotteryMapViewController.swift in Sources */,
+				BC70DEC6240B4CEC00A58519 /* LoginController.swift in Sources */,
+				BC70DE7124086B8200A58519 /* AppDelegate.swift in Sources */,
+				BC2F8139245258B80052E246 /* UserSettingsViewController.swift in Sources */,
+				BC70DE7324086B8200A58519 /* SceneDelegate.swift in Sources */,
+				BC70DE9D2409F9BF00A58519 /* APIManager.swift in Sources */,
+				BC70DE9B2409F98000A58519 /* Model.swift in Sources */,
+				BC57A3D7244E603F00CA2F0C /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC70DE7F24086B8800A58519 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC70DE8824086B8800A58519 /* ViNaTVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF08DC1245E4C1100C5BD27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF08DE1245E50E900C5BD27 /* APIManager.swift in Sources */,
+				BCF08DE8245E671100C5BD27 /* ResultsCollectionViewCell.swift in Sources */,
+				BC99662D2464D1E60071A063 /* LotoResultsV1.swift in Sources */,
+				BCF08DFB2460DC1D00C5BD27 /* MainTableViewCell.swift in Sources */,
+				BCF08DCC245E4C1100C5BD27 /* ViewController.swift in Sources */,
+				BCF08DEB245E68A000C5BD27 /* ResultsViewController.swift in Sources */,
+				BC99662B2464A0B60071A063 /* Extensions.swift in Sources */,
+				BCF08DFE2461096700C5BD27 /* BaseViewController.swift in Sources */,
+				BCF08DC8245E4C1100C5BD27 /* AppDelegate.swift in Sources */,
+				BCF08DCA245E4C1100C5BD27 /* SceneDelegate.swift in Sources */,
+				BCF08DE4245E566A00C5BD27 /* LotoResults.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC70DE8524086B8800A58519 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC70DE6C24086B8200A58519 /* ViNaTV */;
+			targetProxy = BC70DE8424086B8800A58519 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC70DE7624086B8200A58519 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC70DE7724086B8200A58519 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC70DE7B24086B8700A58519 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC70DE7C24086B8700A58519 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BCF08DCD245E4C1100C5BD27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCF08DCE245E4C1100C5BD27 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCF08DD2245E4C1300C5BD27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCF08DD3245E4C1300C5BD27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC70DE8A24086B8800A58519 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC70DE8B24086B8800A58519 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC70DE8D24086B8800A58519 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15BE8E0CB8ACCA5276113414 /* Pods-ViNaTV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VF7VYA94WY;
+				INFOPLIST_FILE = ViNaTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abstec.ViNaTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BC70DE8E24086B8800A58519 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 717FBA6968852178B5D20836 /* Pods-ViNaTV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VF7VYA94WY;
+				INFOPLIST_FILE = ViNaTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abstec.ViNaTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BC70DE9024086B8800A58519 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 051D801D539D17570541DB9F /* Pods-ViNaTVTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VF7VYA94WY;
+				INFOPLIST_FILE = ViNaTVTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abstec.ViNaTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViNaTV.app/ViNaTV";
+			};
+			name = Debug;
+		};
+		BC70DE9124086B8800A58519 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 390B4A5FAC1BEE8B08034846 /* Pods-ViNaTVTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VF7VYA94WY;
+				INFOPLIST_FILE = ViNaTVTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abstec.ViNaTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViNaTV.app/ViNaTV";
+			};
+			name = Release;
+		};
+		BCF08DD6245E4C1300C5BD27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 984E156560731F0100E4DB8F /* Pods-ViNaTV-Manager-VNTV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VF7VYA94WY;
+				INFOPLIST_FILE = "Manager-VNTV/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "abstec.Manager-VNTV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCF08DD7245E4C1300C5BD27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 549BEE27AAAD3C643518861D /* Pods-ViNaTV-Manager-VNTV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VF7VYA94WY;
+				INFOPLIST_FILE = "Manager-VNTV/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "abstec.Manager-VNTV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC70DE6824086B8200A58519 /* Build configuration list for PBXProject "ViNaTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC70DE8A24086B8800A58519 /* Debug */,
+				BC70DE8B24086B8800A58519 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC70DE8C24086B8800A58519 /* Build configuration list for PBXNativeTarget "ViNaTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC70DE8D24086B8800A58519 /* Debug */,
+				BC70DE8E24086B8800A58519 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC70DE8F24086B8800A58519 /* Build configuration list for PBXNativeTarget "ViNaTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC70DE9024086B8800A58519 /* Debug */,
+				BC70DE9124086B8800A58519 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCF08DD8245E4C1300C5BD27 /* Build configuration list for PBXNativeTarget "Manager-VNTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF08DD6245E4C1300C5BD27 /* Debug */,
+				BCF08DD7245E4C1300C5BD27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC70DE6524086B8200A58519 /* Project object */;
+}

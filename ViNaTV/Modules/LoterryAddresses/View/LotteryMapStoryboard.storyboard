@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0UC-uX-z9n">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Loterias-->
+        <scene sceneID="pKR-64-nj3">
+            <objects>
+                <viewController storyboardIdentifier="LotteryMapStoryboard" id="0UC-uX-z9n" customClass="LotteryMapViewController" customModule="ViNaTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tir-l7-QoN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ebB-yD-Cz4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ebB-yD-Cz4" firstAttribute="trailing" secondItem="azj-4C-Hkm" secondAttribute="trailing" id="0Gm-pW-NOQ"/>
+                            <constraint firstItem="ebB-yD-Cz4" firstAttribute="leading" secondItem="azj-4C-Hkm" secondAttribute="leading" id="BhJ-g2-Dh1"/>
+                            <constraint firstItem="ebB-yD-Cz4" firstAttribute="bottom" secondItem="azj-4C-Hkm" secondAttribute="bottom" id="L9T-g8-GTh"/>
+                            <constraint firstItem="ebB-yD-Cz4" firstAttribute="top" secondItem="azj-4C-Hkm" secondAttribute="top" id="bQh-jM-zAE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="azj-4C-Hkm"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Loterias" image="map" catalog="system" selectedImage="map.fill" id="jpa-eM-HBW"/>
+                    <navigationItem key="navigationItem" id="qS2-C8-gG4"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="ebB-yD-Cz4" id="Xip-Z4-Xc2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="255-6Y-uOd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1108.6956521739132" y="146.65178571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="map" catalog="system" width="128" height="113"/>
+        <image name="map.fill" catalog="system" width="128" height="113"/>
+    </resources>
+</document>
