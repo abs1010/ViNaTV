@@ -10,6 +10,8 @@ import UIKit
 
 class LotteryViewController: UIViewController {
 
+    @IBOutlet weak var lotoBrandsTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

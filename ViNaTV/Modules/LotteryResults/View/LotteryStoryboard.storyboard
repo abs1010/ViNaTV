@@ -7,20 +7,39 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Lottery View Controller-->
+        <!--Jogos-->
         <scene sceneID="EsC-iA-pvh">
             <objects>
-                <viewController id="13n-hT-G7X" customClass="LotteryViewController" customModule="ViNaTV" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVCIdentifier" id="13n-hT-G7X" customClass="LotteryViewController" customModule="ViNaTV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t1X-Sr-R9q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fIA-SY-zox">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fIA-SY-zox" firstAttribute="bottom" secondItem="2u3-Bo-Cvp" secondAttribute="bottom" id="Hnb-th-wli"/>
+                            <constraint firstItem="fIA-SY-zox" firstAttribute="top" secondItem="2u3-Bo-Cvp" secondAttribute="top" id="LBH-lj-yQe"/>
+                            <constraint firstItem="fIA-SY-zox" firstAttribute="leading" secondItem="2u3-Bo-Cvp" secondAttribute="leading" id="l7D-Ui-hF2"/>
+                            <constraint firstAttribute="trailing" secondItem="fIA-SY-zox" secondAttribute="trailing" id="oft-Ha-zA3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2u3-Bo-Cvp"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Jogos" image="square.and.pencil" catalog="system" id="j1F-yf-wvs">
+                        <color key="badgeColor" red="0.007339064032" green="0.37054961920000001" blue="0.0052432408559999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DdC-XV-KYo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="191" y="171"/>
+            <point key="canvasLocation" x="189.85507246376812" y="170.75892857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="square.and.pencil" catalog="system" width="128" height="118"/>
+    </resources>
 </document>

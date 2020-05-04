@@ -43,6 +43,12 @@ class LoginViewController: UIViewController {
         
     }
 
+    @IBAction func cancelButton(_ sender: UIButton) {
+        
+        self.dismiss(animated: true, completion: nil)
+        
+    }
+    
     @IBAction func signInWithFacebook(_ sender: UIButton) {
     
         

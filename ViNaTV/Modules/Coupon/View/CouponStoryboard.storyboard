@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ors-0f-Y09">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cupons-->
+        <scene sceneID="jL0-5B-02b">
+            <objects>
+                <viewController id="ors-0f-Y09" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8En-7X-NdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9d9-Lb-IWP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="360"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9d9-Lb-IWP" firstAttribute="leading" secondItem="qFx-zm-j1t" secondAttribute="leading" id="HiC-78-ULG"/>
+                            <constraint firstItem="qFx-zm-j1t" firstAttribute="trailing" secondItem="9d9-Lb-IWP" secondAttribute="trailing" id="PER-3e-Kmv"/>
+                            <constraint firstItem="9d9-Lb-IWP" firstAttribute="top" secondItem="qFx-zm-j1t" secondAttribute="top" id="SiA-yA-d2e"/>
+                            <constraint firstItem="qFx-zm-j1t" firstAttribute="bottom" secondItem="9d9-Lb-IWP" secondAttribute="bottom" constant="409" id="aLE-kA-1Ka"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qFx-zm-j1t"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cupons" image="barcode.viewfinder" catalog="system" id="gqN-Fy-HHT"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zkZ-br-yDB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-304.34782608695656" y="-268.52678571428572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="barcode.viewfinder" catalog="system" width="128" height="114"/>
+    </resources>
+</document>

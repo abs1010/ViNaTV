@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6HG-GK-NUe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ajustes-->
+        <scene sceneID="4vK-nu-gVq">
+            <objects>
+                <viewController id="6HG-GK-NUe" customClass="UserSettingsViewController" customModule="ViNaTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G3j-Dj-0VD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HfB-Zn-Ohj" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="0.0" y="44" width="414" height="554"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HfB-Zn-Ohj" secondAttribute="height" multiplier="207:277" id="Cq7-GQ-yBW"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entre para desfrutar de todas as funções " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrU-i2-3yf">
+                                <rect key="frame" x="22" y="488" width="370.5" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ZMo-vN-bu7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zl-LA-kFW">
+                                <rect key="frame" x="50" y="648" width="314" height="40"/>
+                                <color key="backgroundColor" red="0.007339064032" green="0.37054961920000001" blue="0.0052432408559999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="78c-V4-xSO"/>
+                                </constraints>
+                                <state key="normal" title="Entrar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedSignIn:" destination="6HG-GK-NUe" eventType="touchUpInside" id="GgF-Yh-Ws7"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pfC-sO-b5l">
+                                <rect key="frame" x="344" y="44.5" width="50" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="MAY-Do-1SX"/>
+                                    <constraint firstAttribute="height" constant="50" id="bon-HS-K5Y"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HfB-Zn-Ohj" firstAttribute="leading" secondItem="Ybx-AR-Kys" secondAttribute="leading" id="1TI-vg-4TO"/>
+                            <constraint firstItem="0zl-LA-kFW" firstAttribute="top" secondItem="WrU-i2-3yf" secondAttribute="bottom" constant="80" id="1uh-oq-kTK"/>
+                            <constraint firstItem="WrU-i2-3yf" firstAttribute="centerX" secondItem="G3j-Dj-0VD" secondAttribute="centerX" id="6DC-9L-f0D"/>
+                            <constraint firstItem="Ybx-AR-Kys" firstAttribute="trailing" secondItem="0zl-LA-kFW" secondAttribute="trailing" constant="50" id="Va7-Yf-oo5"/>
+                            <constraint firstItem="0zl-LA-kFW" firstAttribute="leading" secondItem="Ybx-AR-Kys" secondAttribute="leading" constant="50" id="Wcj-Mb-tcT"/>
+                            <constraint firstItem="0zl-LA-kFW" firstAttribute="top" secondItem="HfB-Zn-Ohj" secondAttribute="bottom" constant="50" id="XDn-DK-qfC"/>
+                            <constraint firstItem="HfB-Zn-Ohj" firstAttribute="trailing" secondItem="Ybx-AR-Kys" secondAttribute="trailing" id="hCN-xU-V2N"/>
+                            <constraint firstItem="HfB-Zn-Ohj" firstAttribute="top" secondItem="Ybx-AR-Kys" secondAttribute="top" id="joX-PM-Bj0"/>
+                            <constraint firstItem="pfC-sO-b5l" firstAttribute="top" secondItem="Ybx-AR-Kys" secondAttribute="top" id="lEP-Cz-6Ia"/>
+                            <constraint firstItem="Ybx-AR-Kys" firstAttribute="trailing" secondItem="pfC-sO-b5l" secondAttribute="trailing" constant="20" id="mY5-1b-fbW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ybx-AR-Kys"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ajustes" image="rectangle.grid.1x2" catalog="system" selectedImage="rectangle.grid.1x2.fill" id="Y7T-7G-8Fa"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="animatedLottieView" destination="HfB-Zn-Ohj" id="SKt-VC-LnZ"/>
+                        <outlet property="signInButton" destination="0zl-LA-kFW" id="iNy-Hh-0j6"/>
+                        <outlet property="textDescriptionLabel" destination="WrU-i2-3yf" id="Up7-Nr-VOm"/>
+                        <outlet property="userAvatarImageView" destination="pfC-sO-b5l" id="fYn-a1-AG9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cOW-08-UQr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="146.65178571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="rectangle.grid.1x2" catalog="system" width="128" height="101"/>
+        <image name="rectangle.grid.1x2.fill" catalog="system" width="128" height="101"/>
+    </resources>
+</document>

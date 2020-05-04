@@ -15,11 +15,11 @@ class MainTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if isLoggedIn(){
+//        if isLoggedIn(){
             lottery = LotteryViewController()
-        } else {
-            perform(#selector(showLoginViewController), with: nil, afterDelay: 0.01)
-        }
+//        } else {
+//            perform(#selector(showLoginViewController), with: nil, afterDelay: 0.01)
+//        }
     }
 
     fileprivate func isLoggedIn() -> Bool {
@@ -28,8 +28,8 @@ class MainTabBarController: UITabBarController {
     
     @objc func showLoginViewController(){
         let storyboard = UIStoryboard.init(name: "Login", bundle: nil)
-        guard let vc: LoginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else {return}
-        self.present(vc, animated: false, completion: nil)
+        guard let vc: LoginViewController = storyboard.instantiateViewController(withIdentifier: "LoginStoryboard") as? LoginViewController else {return}
+        self.present(vc, animated: true, completion: nil)
     }
 
 }
