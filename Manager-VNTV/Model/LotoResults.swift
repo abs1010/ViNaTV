@@ -8,17 +8,27 @@
 
 import Foundation
 
-enum lotteryTypes : String {
-    
-    case lotofacil = "Lotofacil"
-    case mega_sena = "Mega-Sena"
-    case quina = "Quina"
-    case dupla_sena = "Dupla-Sena"
-    case lotomania = "Lotomania"
-    case timenania = "Time-Mania"
-    case dia_de_sorte = "Dia de Sorte"
-    
+struct lotteryBrands {
+    var code: String
+    var name: String
 }
+
+/*let lotteryTypes: Set = ["lotofacil",
+                         "mega_sena",
+                         "quina",
+                         "lotomania",
+                         "dia_de_sorte",
+                         "Dia de Sorte"]
+*/
+let lotteryTypes: [lotteryBrands] =
+[lotteryBrands(code: "lotofacil",   name: "Lotofacil"),
+lotteryBrands(code: "mega_sena",    name: "Mega-Sena"),
+lotteryBrands(code: "quina",        name: "Quina"),
+lotteryBrands(code: "lotomania",    name: "Lotomania"),
+lotteryBrands(code: "dia_de_sorte", name: "Dia de Sorte")]
+
+//lotteryBrands(code: "dupla_sena", name: "Dupla-Sena"),
+//lotteryBrands(code: "timenania", name: "Time-Mania"),
 
 struct LotoResults: Codable {
     let code: Int?
@@ -50,6 +60,7 @@ struct DataClass: Codable {
 // MARK: - Drawing
 struct Drawing: Codable {
     let draw: [Int]?
+    let month: String?
 }
 
 // MARK: - Prize

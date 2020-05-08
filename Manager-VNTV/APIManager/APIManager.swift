@@ -22,16 +22,16 @@ enum APIError: Error{
 }
 
 fileprivate let BASE_URL = "https://www.lotodicas.com.br/api/v2/"
-fileprivate let API_KEY = "619603a5672a91e08804d2a45d505c7823442e67b67dab692aedc6ae45f9793c"
+fileprivate let API_KEY = "d0c10e634fa5f0a24549543fd1fd978d2cf16004d6fef15122032bff5b67608b"
 
 class APIManager {
     
-    weak var delegate: APIManagerDelegate?
+   weak var delegate: APIManagerDelegate?
 
-    var lotteryType : lotteryTypes
+    var lotteryType : String
     private let resourceURL:URL
     
-    init(lotteryType : lotteryTypes) {
+    init(lotteryType : String) {
         
         self.lotteryType = lotteryType
     
@@ -53,12 +53,12 @@ class APIManager {
             }
             
             do{
-                let updateExchange = try JSONDecoder().decode(LotoResults.self, from: jsonData)
-                self.delegate?.successOnGettingResults(model: updateExchange)
+                let modelResult = try JSONDecoder().decode(LotoResults.self, from: jsonData)
+                self.delegate?.successOnGettingResults(model: modelResult)
                 
                 print("=====================")
                 print("API Log")
-                print("Resultados da \(self.lotteryType) obtivo com sucesso.")
+                print("API Log - Resultados da \(self.lotteryType) obtivo com sucesso.")
         
                 
             }catch{
@@ -66,7 +66,7 @@ class APIManager {
                 
                 print("=====================")
                 print("API Log")
-                print("Erro ao obter resultados da API. \(self.lotteryType)")
+                print("API Log -  ####Erro ao obter resultados da API. \(self.lotteryType)####")
             }
             
         }.resume()

@@ -15,13 +15,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qX2-Um-dKX">
-                                <rect key="frame" x="184" y="705" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="UcR-GA-kqs">
+                                <rect key="frame" x="19.5" y="348" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UcR-GA-kqs" secondAttribute="height" multiplier="15:8" id="Fq8-oO-Zby"/>
+                                    <constraint firstAttribute="height" constant="200" id="zSh-nQ-H1h"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UcR-GA-kqs" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="jeY-if-dAi"/>
+                            <constraint firstItem="UcR-GA-kqs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zRv-3j-EKI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -30,4 +36,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="1080" height="1080"/>
+    </resources>
 </document>

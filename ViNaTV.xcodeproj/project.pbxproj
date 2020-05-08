@@ -33,6 +33,11 @@
 		BC70DE9B2409F98000A58519 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70DE9A2409F98000A58519 /* Model.swift */; };
 		BC70DE9D2409F9BF00A58519 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70DE9C2409F9BF00A58519 /* APIManager.swift */; };
 		BC70DEC6240B4CEC00A58519 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70DEC5240B4CEC00A58519 /* LoginController.swift */; };
+		BC99662724638E160071A063 /* 18943-growth.json in Resources */ = {isa = PBXBuildFile; fileRef = BC99662424638E160071A063 /* 18943-growth.json */; };
+		BC99662824638E160071A063 /* 10183-location-pin.json in Resources */ = {isa = PBXBuildFile; fileRef = BC99662524638E160071A063 /* 10183-location-pin.json */; };
+		BC99662924638E160071A063 /* 19404-video-playback.json in Resources */ = {isa = PBXBuildFile; fileRef = BC99662624638E160071A063 /* 19404-video-playback.json */; };
+		BC99662B2464A0B60071A063 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC99662A2464A0B60071A063 /* Extensions.swift */; };
+		BC99662D2464D1E60071A063 /* LotoResultsV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC99662C2464D1E60071A063 /* LotoResultsV1.swift */; };
 		BC9DBCB024565C0800563D5B /* LotoBrandsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DBCAE24565C0800563D5B /* LotoBrandsTableViewCell.swift */; };
 		BC9DBCB124565C0800563D5B /* LotoBrandsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC9DBCAF24565C0800563D5B /* LotoBrandsTableViewCell.xib */; };
 		BCF08DC8245E4C1100C5BD27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF08DC7245E4C1100C5BD27 /* AppDelegate.swift */; };
@@ -47,6 +52,9 @@
 		BCF08DE8245E671100C5BD27 /* ResultsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF08DE6245E671100C5BD27 /* ResultsCollectionViewCell.swift */; };
 		BCF08DE9245E671100C5BD27 /* ResultsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF08DE7245E671100C5BD27 /* ResultsCollectionViewCell.xib */; };
 		BCF08DEB245E68A000C5BD27 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF08DEA245E68A000C5BD27 /* ResultsViewController.swift */; };
+		BCF08DFB2460DC1D00C5BD27 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF08DF92460DC1D00C5BD27 /* MainTableViewCell.swift */; };
+		BCF08DFC2460DC1D00C5BD27 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF08DFA2460DC1D00C5BD27 /* MainTableViewCell.xib */; };
+		BCF08DFE2461096700C5BD27 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF08DFD2461096700C5BD27 /* BaseViewController.swift */; };
 		E00589AFAE5CBEB949DF14D0 /* Pods_ViNaTV_Manager_VNTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADA77FEF38EEC1F0AED827B /* Pods_ViNaTV_Manager_VNTV.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +105,11 @@
 		BC70DE9A2409F98000A58519 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		BC70DE9C2409F9BF00A58519 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		BC70DEC5240B4CEC00A58519 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		BC99662424638E160071A063 /* 18943-growth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "18943-growth.json"; sourceTree = "<group>"; };
+		BC99662524638E160071A063 /* 10183-location-pin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "10183-location-pin.json"; sourceTree = "<group>"; };
+		BC99662624638E160071A063 /* 19404-video-playback.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "19404-video-playback.json"; sourceTree = "<group>"; };
+		BC99662A2464A0B60071A063 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BC99662C2464D1E60071A063 /* LotoResultsV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotoResultsV1.swift; sourceTree = "<group>"; };
 		BC9DBCAE24565C0800563D5B /* LotoBrandsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotoBrandsTableViewCell.swift; sourceTree = "<group>"; };
 		BC9DBCAF24565C0800563D5B /* LotoBrandsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LotoBrandsTableViewCell.xib; sourceTree = "<group>"; };
 		BCF08DC5245E4C1100C5BD27 /* Manager-VNTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Manager-VNTV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +126,9 @@
 		BCF08DE6245E671100C5BD27 /* ResultsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsCollectionViewCell.swift; sourceTree = "<group>"; };
 		BCF08DE7245E671100C5BD27 /* ResultsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsCollectionViewCell.xib; sourceTree = "<group>"; };
 		BCF08DEA245E68A000C5BD27 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		BCF08DF92460DC1D00C5BD27 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		BCF08DFA2460DC1D00C5BD27 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		BCF08DFD2461096700C5BD27 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		CADA77FEF38EEC1F0AED827B /* Pods_ViNaTV_Manager_VNTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViNaTV_Manager_VNTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -510,6 +526,8 @@
 				BCF08DC9245E4C1100C5BD27 /* SceneDelegate.swift */,
 				BCF08DD0245E4C1300C5BD27 /* Assets.xcassets */,
 				BCF08DD2245E4C1300C5BD27 /* LaunchScreen.storyboard */,
+				BCF08DFD2461096700C5BD27 /* BaseViewController.swift */,
+				BC99662A2464A0B60071A063 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -517,6 +535,9 @@
 		BCF08DDD245E4DE400C5BD27 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				BC99662524638E160071A063 /* 10183-location-pin.json */,
+				BC99662424638E160071A063 /* 18943-growth.json */,
+				BC99662624638E160071A063 /* 19404-video-playback.json */,
 				BCF08DDE245E4DFD00C5BD27 /* 4510-uploading.json */,
 			);
 			path = Animation;
@@ -526,6 +547,7 @@
 			isa = PBXGroup;
 			children = (
 				BCF08DE3245E566A00C5BD27 /* LotoResults.swift */,
+				BC99662C2464D1E60071A063 /* LotoResultsV1.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -533,6 +555,8 @@
 		BCF08DE5245E66D700C5BD27 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				BCF08DF92460DC1D00C5BD27 /* MainTableViewCell.swift */,
+				BCF08DFA2460DC1D00C5BD27 /* MainTableViewCell.xib */,
 				BCF08DE6245E671100C5BD27 /* ResultsCollectionViewCell.swift */,
 				BCF08DE7245E671100C5BD27 /* ResultsCollectionViewCell.xib */,
 			);
@@ -673,10 +697,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC99662924638E160071A063 /* 19404-video-playback.json in Resources */,
+				BC99662724638E160071A063 /* 18943-growth.json in Resources */,
+				BCF08DFC2460DC1D00C5BD27 /* MainTableViewCell.xib in Resources */,
 				BCF08DE9245E671100C5BD27 /* ResultsCollectionViewCell.xib in Resources */,
 				BCF08DD4245E4C1300C5BD27 /* LaunchScreen.storyboard in Resources */,
 				BCF08DDF245E4DFE00C5BD27 /* 4510-uploading.json in Resources */,
 				BCF08DD1245E4C1300C5BD27 /* Assets.xcassets in Resources */,
+				BC99662824638E160071A063 /* 10183-location-pin.json in Resources */,
 				BCF08DCF245E4C1100C5BD27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -820,8 +848,12 @@
 			files = (
 				BCF08DE1245E50E900C5BD27 /* APIManager.swift in Sources */,
 				BCF08DE8245E671100C5BD27 /* ResultsCollectionViewCell.swift in Sources */,
+				BC99662D2464D1E60071A063 /* LotoResultsV1.swift in Sources */,
+				BCF08DFB2460DC1D00C5BD27 /* MainTableViewCell.swift in Sources */,
 				BCF08DCC245E4C1100C5BD27 /* ViewController.swift in Sources */,
 				BCF08DEB245E68A000C5BD27 /* ResultsViewController.swift in Sources */,
+				BC99662B2464A0B60071A063 /* Extensions.swift in Sources */,
+				BCF08DFE2461096700C5BD27 /* BaseViewController.swift in Sources */,
 				BCF08DC8245E4C1100C5BD27 /* AppDelegate.swift in Sources */,
 				BCF08DCA245E4C1100C5BD27 /* SceneDelegate.swift in Sources */,
 				BCF08DE4245E566A00C5BD27 /* LotoResults.swift in Sources */,
@@ -924,7 +956,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -978,7 +1010,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
